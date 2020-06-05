@@ -8,11 +8,11 @@ body {
     flex-direction: column;
 }
 h1 {
-    color: orange; !important
+    color: orange;
 }
 
 button {
-    margin-top: 5em;
+    margin-top: .5em;
 }
 
 .meta {
