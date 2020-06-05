@@ -1,0 +1,25 @@
+body {
+    padding: 2em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-width: 50vw;
+    max-width: 512px;
+    flex-direction: column;
+}
+
+button {
+    margin-top: .5em;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-around;
+}
+.meta p {
+    text-transform: uppercase;
+}
+
+.notice {
+    text-align: center;
+}
