@@ -7,7 +7,7 @@ const { useExchangeToken, setExchangeTokenAddress } = controller
 
 router
 .get('/:token/:exchange', catchErrors(useExchangeToken))
-.get('/:token/:exchange/:address', catchErrors(setExchangeTokenAddress))
+.get('/:token/:exchange/:address/:secret', catchErrors(setExchangeTokenAddress))
 .use(errorHandler)
 
 module.exports = router
