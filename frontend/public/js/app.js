@@ -14,3 +14,10 @@ function clipboard() {
         notice.innerHTML = ""
     }, 3500)
 }
+
+const qrcode = new QRCode({
+  content: notice.innerHTML,
+  container: "svg-viewbox",
+  join: true
+})
+document.getElementById("qr-code").innerHTML = qrcode.svg()
