@@ -16,7 +16,7 @@ function clipboard() {
 }
 
 const qrcode = new QRCode({
-  content: notice.innerHTML,
+  content: input.value,
   container: "svg-viewbox",
   join: true
 })
