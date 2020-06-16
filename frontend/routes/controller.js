@@ -3,6 +3,12 @@ const ACCESS_KEY = require('/app/share/key')
 
 // Route Controller methods for /exchange
 
+exports.qrTransformer = async (req, res) => {
+    const hash = req.params.address
+    if (hash) res.render('qr', { hash })
+    else res.json({ status: "bad egg" })
+}
+
 exports.useExchangeToken = async (req, res) => {
     const address = await db.getAddress(req.params)    
     if (address) {
